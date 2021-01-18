@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:wght@400;500;700&display=swap');
+
+.navbar {
+    background: none;
+  }
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("C:/Myprojects/Prajna Soft Creations/prajna-soft-creations/webdesign/images/field.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-theme{
+   background: rgb(0, 106, 78, 0.3);   
+}
+.nav-link  {    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color:#FFFFFF;
+    text-shadow: 2px 2px #6d6969;
+
+    }
+.nav-link :hover {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color:#93df3d;
+
+}
+.mt-100 {
+    margin-top: 100px;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+  
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
