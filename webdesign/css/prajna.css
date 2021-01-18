@@ -20,6 +20,10 @@ header,
 .bg-theme{
    background: rgb(0, 106, 78, 0.3);   
 }
+
+.bg-head-white{
+  background: rgb(0, 0, 0, 0.3);   
+}
 .nav-link  {    
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -27,10 +31,10 @@ header,
     text-shadow: 2px 2px #6d6969;
 
     }
-.nav-link :hover {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color:#93df3d;
+.navbar .navbar-nav  > li > a:hover {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color:#93df3d;
 
 }
 .mt-100 {
