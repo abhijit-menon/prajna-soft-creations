@@ -1,45 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:wght@400;500;700&display=swap');
+@import url('css/google-fonts.css');
 
 .navbar {
     background: none;
+   /* background-color: rgb(245, 179, 56); */
+    padding: 10px;
+    height: auto;
+    /* Black w/opacity/see-through */
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-transform: capitalize;
+    
+  }
+.sq-layout
+  {
+  margin-left: 17px;
+  margin-right: 17px;
+    
+  }
+.body {
+    background: #f4f4f4;
   }
 html,
 body,
 header,
-#intro {
-    height: 100%;
-}
 
-#intro {
-    background: url("C:/Myprojects/Prajna Soft Creations/prajna-soft-creations/webdesign/images/field.jpeg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.my-4{
+  color:rgb(13, 14, 13);
+  
 }
-.bg-theme{
-   background: rgb(0, 106, 78, 0.3);   
+.mb-4{
+  background-color: rgb(241, 232, 226);
 }
-
-.bg-head-white{
-  background: rgb(0, 0, 0, 0.3);   
+.view{
+  padding-top: 15px;
+}
+.mb-3{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+  color:rgb(222, 233, 222)
+}
+.mb-5{
+  color:darkgoldenrod;
+  
+}
+.pdt{
+  margin-top: 70px;
+  background-color:seagreen;
+  width: 600px;
+  margin-left: 250px;
+  margin-top: 200px;;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  line-height: 20px;
+  
+  
+}
+a.button {
+  display: block;
+  position: relative;
+  width: 120px;
+  padding: 0;
+  margin-left: 170px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+  text-decoration:none;
+}
+.btnOrange {
+  background: #FFAA40;
+}
+.btnFade.btnOrange:hover {
+  background: #FF8E00;
 }
 .nav-link  {    
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color:#FFFFFF;
-    text-shadow: 2px 2px #6d6969;
+    /*text-shadow: 2px 2px #6d6969;*/
 
+    }
+
+.navbar  a {
+      color:#FFFFFF;
+    }
+    
+.navbar .navbar-nav  > li > a{
+      color:#f1faeb;
     }
 .navbar .navbar-nav  > li > a:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  color:#93df3d;
+  color:#4b810c;
 
 }
-.mt-100 {
-    margin-top: 100px;
+.bg-head-white {
+  background-color:#104210;
 }
+
+
 
 .top-nav-collapse {
     background-color: #24355C;
@@ -54,3 +118,10 @@ header,
       background-color: #24355C;
     }
   }
+  .banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  }
+  
+  
