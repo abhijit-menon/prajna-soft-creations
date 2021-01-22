@@ -20,7 +20,8 @@
   margin-right: 17px;
     
   }
-.body {
+.bod
+y {
     background: #f4f4f4;
   }
 html,
@@ -31,9 +32,7 @@ header,
   color:rgb(13, 14, 13);
   
 }
-.mb-4{
-  background-color: rgb(241, 232, 226);
-}
+
 .view{
   padding-top: 15px;
 }
@@ -123,5 +122,4 @@ a.button {
     background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
     background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
   }
-  
   
