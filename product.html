@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Prajna Soft Creations </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="css/google-fonts.css">
+  <!-- Vendor CSS Files -->
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="icofont/icofont.min.css" rel="stylesheet">
+  <link href="css/remixicon/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="Owlcarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="Owlcarousel/dist/assets/owl.theme.default.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="css/prajna.css" rel="stylesheet">
+
+
+<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/jquery/jquery.easing.min.js"></script>  
+<script src="owlcarousel/dist/assets/owl.carousel.min.js"></script>
+<script src="js/jquery/jquery.waypoints.min.js"></script>
+<script src="js/counterup/jquery.counterup.min.js"></script>
+
+<script src="js/bootstrap/popper.min.js.map"></script>
+<script src="js/venobox/venobox.min.js"></script>
+ <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+ <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+<!-- Template Main JS File -->
+<script src="js/prajna.js"></script>
+
+
+
+
+<script>
+    function getParameterByName(name, url) {
+      
+    if (!url) url = window.location.href;//alert(url);
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+// Give the parameter a variable name
+var dynamicContent = getParameterByName('dc');//alert(dynamicContent);
+  </script>
+  <script type="text/javascript">
+ $(document).ready(function() {
+	// Check if the URL parameter is apples
+	if (dynamicContent == 'paddy') {
+    $('#default-content').show();
+    $('#sugarcane').hide();
+    $('#jute').hide();
+	} 
+	// Check if the URL parameter is oranges
+	else if (dynamicContent == 'sugarcane') {
+    $('#sugarcane').show();
+    $('#default-content').hide();
+    $('#jute').hide();
+  } 
+  else if (dynamicContent == 'Jute') {
+    $('#sugarcane').hide();
+    $('#default-content').hide();
+    $('#jute').show();
+	} 
+	// Check if the URL parmeter is empty or not defined, display default content
+	else {
+		$('#default-content').show();
+	}
+});
+</script>
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!---gallery-->
+
+  </head>
+  <body>
+    <header>
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-sm fixed-top  navbar-light scrolling-navbar">
+
+          <div class="container">
+
+              <!-- Navbar brand -->
+              <a class="navbar-brand" href="#"><img src="images/logo-cropped.png" width="120" height="70"> Prajna  Soft Creations</a>
+
+              <!-- Collapse button -->
+              <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Collapsible content -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <!-- Links -->
+                  <ul class="navbar-nav mx-auto smooth-scroll">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#Products" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <i class="fa fa-tree" aria-hidden="true"></i> &nbsp; Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#"><img src="images/svathi.png">  Svathi</a>
+                          <a class="dropdown-item" href="#"><img src="images/vaish.png">Vaish</a>                          
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <i class="fa fa-lemon-o" aria-hidden="true"></i> &nbsp; Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Web Development</a>
+                          <a class="dropdown-item" href="#">Mobile Applications</a>                         
+                      </li>                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html#Gallery"><i class="fas fa-briefcase"></i> Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</a>
+                    </li>
+                  </ul>
+                  <!-- Links -->
+
+                  <!-- Social Icon  -->
+                  <ul class="navbar-nav nav-flex-icons">
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://www.facebook.com/Prajna-Soft-Creations-106034474794976/"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- Collapsible content -->
+
+          </div>
+
+      </nav>
+      <!--/.Navbar-->
+      
+      
+</header>
+  <!--Main Navigation-->
+
+  
+<!-- full Title -->
+<div class="full-title">
+  <div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3"><br>
+      <small><br></small>
+    </h1>
+  </div>
+</div>
+
+  <!-- Page Content for Paddy-->
+  <div id="default-content" class="dynamic-content container">
+
+  <div class="breadcrumb-main">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html" style="text-decoration: none; color: green;">Home</a>
+      </li>
+      <li class="breadcrumb-item active"><a href="index.html#Gallery" style="text-decoration: none; color: green;">Portfolio</a> / Paddy</li>
+    </ol>
+  </div>
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img-fluid" src="images/paddy/paddy8.jpeg" alt="" />
+    </div>
+    <div class="col-md-6">
+        <div class="text-dark p-5 rounded banner" >
+        <h3 class="display-4">Rice - Oryza sativa</h3>
+        </div>
+        <p class="grey-text">Rice is the seed of the grass species Oryza sativa (Asian rice) 
+        . As a cereal grain, 
+          it is the most widely consumed staple food for a large part of the world's human population, 
+          especially in Asia and Africa. It is the agricultural commodity with the 
+          third-highest worldwide production (rice, 741.5 million tonnes in 2014), 
+          after sugarcane (1.9 billion tonnes) and maize (1.0 billion tonnes). 
+          Cooked unenriched long-grain white rice is composed of 68% water, 
+          28% carbohydrates, 3% protein, and negligible fat.
+           A 100-gram (3 1⁄2-ounce) reference serving of it provides 
+           540 kilojoules (130 kilocalories) of food energy and 
+           contains no micronutrients in significant amounts, 
+           with all less than 10% of the Daily Value (DV).
+            Cooked short-grain white rice provides the same food energy 
+            and contains moderate amounts of B vitamins, iron, and manganese (10–17% DV) per 100-gram serving.</p>
+      
+    </div>
+  </div>
+  <!-- /.row -->
+<!---row-->
+
+  <!-- second Row -->
+    <div class="row">
+    <div class="col-md-12 mb-4">
+      <h3 class="my-3 display-4">Cultivation Details</h3>
+      <p class="text-dark">
+        Rice cultivation on wetland rice fields is thought to be responsible 
+        for 11% of the anthropogenic methane emissions.Rice requires slightly 
+        more water to produce than other grains.
+Long-term flooding of rice fields cuts the soil off from atmospheric oxygen and causes anaerobic fermentation of organic matter in the soil.
+ Methane production from rice cultivation contributes ~1.5% of anthropogenic greenhouse gases.
+ Methane is twenty times more potent a greenhouse gas than carbon dioxide.
+ Rice requires high temperature above 20 °C (68 °F) but not more than 35 to 40 °C (95 to 104 °F); 
+ the optimal temperature is between 20 and 30 °C (68 and 86 °F).
+ The amount of solar radiation received during the 45 days leading up to harvest determines final crop output.
+ High water vapor content (in humid tropics) subjects unusual stress which favors the spread of fungal and bacterial diseases.
+ Light wind transports CO2 to the leaf canopy but strong wind causes severe damage and may lead to sterility (due to pollen dehydration, spikelet sterility, and abortive endosperms).
+ <ul>
+  <li>Rainfall</li>
+  <li>Temperature</li>
+  <li>Solar radiation</li>
+  <li>Atmospheric water vapor</li>
+  <li>Wind</li>
+</ul>
+      </p>
+    </div>
+  </div>
+
+<!---row-->
+  <div class="related-projects text-uppercase text-dark font-weight-bold mb-3 display-4">
+    <!-- Related Projects Row -->
+    <h3>Related Projects</h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/paddy/paddy1.jpeg" alt="" />
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/paddy/paddy2.jpeg" alt="" />
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/paddy/paddy3.jpeg" alt="" />
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/paddy/paddy4.jpeg" alt="" />
+        </a>
+      </div>
+
+    </div>
+    <!-- /.row -->
+  </div>
+  </div>
+  <!-- /.container -->
+<link href="css/portfolio.css">
+
+  <!-- Page Content for SUGARCANE-->
+  <div id="sugarcane"  class="dynamic-content container" >
+
+    <div class="breadcrumb-main">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html" style="text-decoration: none; color: green;">Home</a>
+        </li>
+        <li class="breadcrumb-item active"><a href="index.html#Gallery" style="text-decoration: none; color: green;">Portfolio</a> / Sugarcane</li>
+      </ol>
+    </div>
+  
+    <!-- Portfolio Item Row -->
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-fluid" src="images/sugarcane/SG6.jpeg" alt="" />
+      </div>
+      <div class="col-md-6">
+        <div class="text-dark p-5 rounded banner" >
+          <h3 class="display-4">Sugarcane</h3>
+        </div>
+          <p class="grey-text">Sugarcane refer to several species 
+            and hybrids of tall perennial grass in the genus Saccharum, tribe Andropogoneae, that are used for sugar production. 
+            The plants are two to six metres (six to twenty feet) tall with stout, jointed, fibrous stalks that are rich in sucrose, 
+            which accumulates in the stalk internodes. Sugarcanes belong to the grass family, Poaceae, 
+            an economically important flowering plant family that includes maize, wheat, rice, and sorghum, and many forage crops.
+             
+            It is native to the warm temperate to tropical regions of India, Southeast Asia and New Guinea.
+
+            Sugarcane is the world's largest crop by production quantity, with 1.8 billion tonnes production./p>
+        
+      </div>
+    </div>
+    <!-- /.row -->
+  <!---row-->
+  
+    <!-- second Row -->
+      <div class="row">
+      <div class="col-md-12 mb-4">
+        <h3 class="my-3 display-4">Cultivation Details</h3>
+        <p class="text-dark">
+          Sugarcane cultivation requires a tropical or subtropical climate, 
+          with a minimum of 60 cm (24 in) of annual moisture. 
+          It is one of the most efficient photosynthesizers in the plant kingdom.
+          Sugarcane is cultivated in the tropics and subtropics in areas with a 
+          plentiful supply of water for a continuous period of more than six to seven months each year,
+           either from natural rainfall or through irrigation. The crop does not tolerate severe frosts. 
+          Therefore, most of the world's sugarcane is grown between 22°N and 22°S, and some up to 33°N and 33°S.
+          Sugarcane is harvested by hand and mechanically. Hand harvesting accounts for more than half of production, 
+          and is dominant in the developing world. In hand harvesting, the field is first set on fire. 
+          The fire burns up dry leaves, and chases away or kills venomous snakes, without harming the stalks and roots. 
+          Harvesters then cut the cane just above ground-level using cane knives or machetes. 
+          A skilled harvester can cut 500 kg (1,100 lb) of sugarcane per hour.
+          This mechanical harvesting does not require the field to be set on fire;
+           the residue left in the field by the machine consists of sugar cane tops and dead leaves, which serve as mulch for the next planting.
+   
+        </p>
+      </div>
+    </div>
+  
+  <!---row-->
+    <div class="related-projects text-uppercase text-dark font-weight-bold mb-3 display-4">
+      <!-- Related Projects Row -->
+      <h3>Related Projects</h3>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/sugarcane/SG1.jpeg" alt="" />
+          </a>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/sugarcane/SG8.jpeg" alt="" />
+          </a>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/sugarcane/SG3.jpeg" alt="" />
+          </a>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/sugarcane/SG4.jpeg" alt="" />
+          </a>
+        </div>
+  
+      </div>
+      <!-- /.row -->
+    </div>
+    </div>
+    <!-- /.container for sugar  cane -->
+  
+ <!-- Page Content for JUTE-->
+ <div id="jute" class="dynamic-content container">
+
+  <div class="breadcrumb-main">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html" style="text-decoration: none; color: green;">Home</a>
+      </li>
+      <li class="breadcrumb-item active"><a href="index.html#Gallery" style="text-decoration: none; color: green;">Portfolio</a> / Jute</li>
+    </ol>
+  </div>
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+    <div class="col-md-6"><br><br><br><br>
+      <img class="img-fluid" src="images/jute/Jute.jpeg" alt="" />
+    </div>
+    <div class="col-md-6">
+        <div class="text-dark p-5 rounded banner" >
+        <h3 class="display-4">JUTE </h3>
+        </div>
+        <p class="grey-text">Jute is a long, soft, shiny bast fiber that can be spun into coarse, strong threads.
+           It is produced from flowering plants in the genus Corchorus, which is in the mallow family Malvaceae. 
+           The primary source of the fiber is Corchorus olitorius, but it is considered inferior to Corchorus capsularis.
+            "Jute" is the name of the plant or fiber used to make burlap, hessian or gunny cloth.
+
+          Jute is one of the most affordable natural fibers, and second only to cotton in the amount produced and variety of uses.
+           Jute fibers are composed primarily of the plant materials cellulose and lignin. 
+           It falls into the bast fiber category (fiber collected from bast, the phloem of the plant, 
+           sometimes called the "skin") along with kenaf, industrial hemp, flax (linen), ramie, etc. 
+           The industrial term for jute fiber is raw jute. The fibers are off-white to brown, and 1–4 metres (3–13 feet) long.
+           Jute is also called the "golden fiber" for its color and high cash value.</p>
+      
+    </div>
+  </div>
+  <!-- /.row -->
+<!---row-->
+
+  <!-- second Row -->
+    <div class="row">
+    <div class="col-md-12 mb-4">
+      <h3 class="my-3 display-4">Cultivation Details</h3>
+      <p class="text-dark">
+        The jute plant needs a plain alluvial soil and standing water. 
+        The suitable climate for growing jute (warm and wet) is offered by the monsoon climate, during the monsoon season. 
+        Temperatures from 20 to 40 °C (68–104 °F) and relative humidity of 70%–80% are favourable for successful cultivation. 
+        Jute requires 5–8 cm (2–3 in) of rainfall weekly, and more during the sowing time. Soft water is necessary for jute production.
+
+      </p>
+        
+        <ul>
+  <li>White jute (Corchorus capsularis)</li><br>
+    Historical documents (including Ain-e-Akbari by Abu'l-Fazl ibn Mubarak in 1590) 
+    state that the poor villagers of India used to wear clothes made of jute. 
+    The weavers used simple hand spinning wheels and hand looms, and spun cotton yarns as well. 
+    History also suggests that Indians, especially Bengalis, used ropes and twines made of white
+     jute from ancient times for household and other uses.
+     It is highly functional for carrying grains or other agricultural products.<br><br>
+  <li>Tossa jute (Corchorus olitorius)</li><br>
+  Tossa jute (Corchorus olitorius) is a variety thought native to South Asia. 
+  It is grown for both fiber and culinary purposes.
+   People use the leaves as an ingredient in a mucilaginous potherb called "molokhiya" (ملوخية, of uncertain etymology). 
+   It is popular in some Arabic countries such as Egypt, Jordan, and Syria as a soup-based dish, sometimes with meat over rice or lentils.
+    The Book of Job (chapter 30, verse 4), in the King James translation of the Hebrew Bible מלוח maluaḥ "salty",
+     mentions this vegetable potherb as "mallow, giving rise to the term Jew's Mallow. It is high in protein, vitamin C,
+      beta-carotene, calcium, and iron.
+
+Bangladesh and other countries in Southeast Asia, and the South Pacific mainly use jute for its fiber. 
+Tossa jute fiber is softer, silkier, and stronger than white jute.
+ This variety shows good sustainability in the Ganges Delta climate. 
+ Along with white jute, tossa jute has also been cultivated in the soil of Bengal where it is known as paat from 
+ the start of the 19th century.
+ Coremantel, Bangladesh, is the largest global producer of the tossa jute variety.
+  
+</ul>
+      </p>
+    </div>
+  </div>
+
+<!---row-->
+  <div class="related-projects text-uppercase text-dark font-weight-bold mb-3 display-4">
+    <!-- Related Projects Row -->
+    <h3>Related Projects</h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/jute/image5.jpeg" alt="" />
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/jute/image2.jpeg" alt="" />
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/jute/image3.jpeg" alt="" />
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="images/jute/image4.jpeg" alt="" />
+        </a>
+      </div>
+
+    </div>
+    <!-- /.row -->
+  </div>
+  </div>
+  <!-- /.container  JUTE-->
+
+
+<!-- Footer -->
+<footer style="background-color: floralwhite;">
+    <div class="container py-5">
+      <div class="row py-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+          <p class="font-italic text-muted">Founded in 2020, Prajna Soft Creations is an Indian technology  
+                        
+            company providing AI solutions to industries including Agriculture.</p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">PRODUCTS</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Swati</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Vysh</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Contact Us</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+          <p class="text-muted mb-4">We always sends valuable information as Newsletter. Provide Your Email ID.</p>
+          <div class="p-1 rounded border">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+              <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyrights -->
+    <div class=" py-4" style="background-color: rgb(207, 203, 194);">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2">© 2021  All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<!-- End -->
+
+<!---Footer-->
+ 
+  </body>
+
+
+
+
+</body>
+
+</html>
