@@ -5,550 +5,405 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Prajna Soft Creations </title>
+  <title>Aranya - Home</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  
+  <link href="images/ARANYA-logo.jpeg" rel="icon">
+  <link href="images/ARANYA-logo.jpeg" rel="apple-touch-icon">
+
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="css/google-fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link href="icofont/icofont.min.css" rel="stylesheet">
-  <link href="css/remixicon/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="Owlcarousel/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="Owlcarousel/dist/assets/owl.theme.default.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/contact.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="css/prajna.css" rel="stylesheet">
-<!----Gallery-->
-<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="js/bootstrap/bootstrap.min.js"></script>
-<script src="jquery/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-<!--SEARCH LOCATION BY COUNTRY STATE DISTRICT-->
-<script>
-  var stateObject = {
-  "India": { "Delhi": ["New Delhi", "North Delhi"],
-  "Kerala": ["Thiruvananthapuram", "Palakkad","Thrissur"],
-  "Goa": ["North Goa", "South Goa"],
-  },
-  "Australia": {
-  "South Australia": ["Dunstan", "Mitchell"],
-  "Victoria": ["Altona", "Euroa"]
-  }, "Canada": {
-  "Alberta": ["Acadia", "Bighorn"],
-  "Columbia": ["Washington", ""]
-  },
-  }
-  window.onload = function () {
-  var countySel = document.getElementById("countySel"),
-  stateSel = document.getElementById("stateSel"),
-  districtSel = document.getElementById("districtSel");
-  for (var country in stateObject) {
-  countySel.options[countySel.options.length] = new Option(country, country);
-  }
-  countySel.onchange = function () {
-  stateSel.length = 1; // remove all options bar first
-  districtSel.length = 1; // remove all options bar first
-  if (this.selectedIndex < 1) return; // done 
-  for (var state in stateObject[this.value]) {
-  stateSel.options[stateSel.options.length] = new Option(state, state);
-  }
-  }
-  countySel.onchange(); // reset in case page is reloaded
-  stateSel.onchange = function () {
-  districtSel.length = 1; // remove all options bar first
-  if (this.selectedIndex < 1) return; // done 
-  var district = stateObject[countySel.value][this.value];
-  for (var i = 0; i < district.length; i++) {
-  districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
-  }
-  }
-  }
-  </script>
-  
-  </head>
-  <body>
-    <header>
-
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-sm fixed-top  navbar-light scrolling-navbar">
-
-          <div class="container">
-
-              <!-- Navbar brand -->
-              <a class="navbar-brand" href="#"><img src="images/logo-cropped.png" width="120" height="70"> Prajna  Soft Creations</a>
-
-              <!-- Collapse button -->
-              <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <!-- Collapsible content -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                  <!-- Links -->
-                  <ul class="navbar-nav mx-auto smooth-scroll">
-                      <li class="nav-item">
-                          <a class="nav-link" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                      </li>
-                      
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#Products" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         <i class="fa fa-tree"></i> &nbsp; Products
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#"><img src="images/svathi.png">  Svathi</a>
-                          <a class="dropdown-item" href="#"><img src="images/vaish.png">Vaish</a>                          
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         <i class="fa fa-lemon-o" aria-hidden="true"></i> &nbsp; Services
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Web Development</a>
-                          <a class="dropdown-item" href="#">Mobile Applications</a>                         
-                      </li>                    
-                      <li class="nav-item">
-                        <a class="nav-link" href="#Gallery"><i class="fas fa-briefcase"></i> Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</a>
-                    </li>
-                  </ul>
-                  <!-- Links -->
-
-                  <!-- Social Icon  -->
-                  <ul class="navbar-nav nav-flex-icons">
-                      <li class="nav-item">
-                          <a class="nav-link" href="https://www.facebook.com/Prajna-Soft-Creations-106034474794976/"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link"><i class="fa fa-instagram"></i></a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- Collapsible content -->
-
-          </div>
-
-      </nav>
-      <!--/.Navbar-->
-      <!-- Background image -->
-  <div id="home"
-  class="p-5 text-center mask" style="background: url('images/mixed/background-image.jpeg');
-  height: 800px; 
-  background-repeat: no-repeat; 
-  background-position: center;
-  -moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;">
-    <div style="margin-left: 150px;margin-top: 480px; ">
-   <!----  <div class="d-flex justify-content-center align-items-center h-100">
-      <div class="text-white">
-       <h1 class="mb-3">Scientific Resorce Planning </h1>   -->
-       <form name="myform" id="myForm">
-        <select name="state" id="countySel" size="1">
-        <option value="" selected="selected">Select Country</option>
-        </select>
-        
-        &nbsp;<select name="countrya" id="stateSel" size="1">
-        <option value="" selected="selected">Please select Country first</option>
-        </select>
-        &nbsp;
-        <select name="district" id="districtSel" size="1">
-        <option value="" selected="selected">Please select State first</option>
-        </select>
-        <input type="submit" value="Go" name="btn-go">
-        <closeform></closeform></form>
-        
-      
-    <!---- </div>
-    </div>  -->
-  </div>
-
-</div>
-<!-- Background image -->
-      
-</header>
-  <!--Main Navigation-->
-
-  <!--Main layout-->
-  <main class="mt-5">
-      <div class="container">        
-          <!---divider-->
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-            <div class="mb-4">
-                <h6 class="text-uppercase"></h6>
-                <!-- Solid divider -->
-                
-            </div>
-        </div>
-        </div>
-          <!---divider-->
-          <!--Section: Best Features-->
-          <section id="Products" class="text-center sqs-block-content">
-
-              <!-- Heading -->
-              <!-- Banner Heading -->
-              <div class="row py-5">
-                <div class="col-lg-12 mx-auto">
-                  <div class="text-dark p-5 shadow-sm rounded banner" >
-                    <h1 class="display-4">AI Technology to help Farmers </h1>
-                  </div>
-                </div>
-              </div>
-              <!-- End -->
-              
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-
-                      <!-- Description -->
-                      <p class="grey-text">Make the right decisions by knowing what’s happening in your own backyard followed a "Scientific Resource Planning" and Mitigate risk to increase Operational Efficiency. Dedicated team of professionals to raise the standard of farmers by using enhanced technology in developing their business.Every human on earth depends directly or indirectly on farming for their survival. </p>
-
-                  </div>
-                  <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-6 mb-1">
-                      
-                                          
-                            <h4 class="my-4 font-weight-bold"><img src="images/Svathi.png" >&nbsp;Svathi</h4>
-                            <p class="grey-text">Using the technology of Artificial Intelligence and Scientific Resource Planning and
-                                 to help the farmers to get healthy farming thus by increase the profit
-                                crops
-                            </p>
-                        
-                    
-                  </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-md-6 mb-1">
-                      
-                      
-                      <h4 class="my-4 font-weight-bold"><img src="images/Vaish.png"> &nbsp;Vaish</h4>
-                      <p class="grey-text">Direct to consumer ecommerce applications for farmers provides Inventory and supply chain management, Vendor Management and Cost effective solutions  and business analytics</p>
-                  </div>
-                  <!--Grid column-->
-                
-              </div>
-            </br>
-
-              <!--Grid row-->
-               <!--Grid row--MISSION-->
-               <div class="row" style="margin-left: 300px; margin-right: 225px; background-color: rgb(235, 229, 229);">
-                <!--Grid column-->
-              <div  class="col-md-6 p-2" style="border-left: 5px solid rgb(163, 3, 3);">
-                <h4 class="my-4 font-weight-bold " style="font-family: 'Poppins', sans-serif;">MISSION</h4>
-                <p >We cultivate innovative technology solutions to the field that give birth to a healthier generation.</p> 
-              </div>
-              <div  class=" bg-white col-md-6 p-2" >
-                
-                             
-              </div>
-            </div>
-             <!--Grid row--MISSION> -->
-             
-             <!--Grid row--VISION -->
-            <div class="row md-5" style="margin-left: 310px; margin-right: 230px; background-color: rgb(235, 229, 229);
-            border-right: 5px solid rgb(163, 3, 3);">
-              <div  class="bg-white col-md-6 p-2">                
-                
-              </div>
-              <div class="col-md-6 p-2">
-                <h4 class="my-4 font-weight-bold" style="font-family: 'Poppins', sans-serif;">VISION</h4>
-                <p>  Prajna Soft : Better Food for healthier life.</p>
-              </div>
-            </div>
-          </section>
-          <!--Section: Best Features-->
-
-          <hr class="my-5">
-
-         
-          <!--Section: Examples-->
-         
-
-          <section id="Gallery">
-
-            <div class="container-fluid">
-                <div class="px-lg-5">
-              
-                  <!-- Banner Gallery -->
-                  <div class="row py-5">
-                    <div class="col-lg-12 mx-auto">
-                      <div class="text-dark p-5 shadow-sm rounded banner" >
-                        <h1 class="display-4">Large Scale Plantation Gallery</h1>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End -->
-
-            <div class="row">
-                <!-- Gallery item -->
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                  <div class="bg-white rounded shadow-sm"><img src="images/paddy/paddy-field-cropped.jpg" alt="" class="img-fluid card-img-top">
-                    <div class="p-4">
-                      <h5> <a href="product.html?dc=paddy" class="text-dark" style="text-decoration: none;">Paddy</a></h5>
-                      <p class="small text-muted mb-0">Third-highest Worldwide production and most widely consumed staple food for a large part of the human population.</p>
-                      <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                        <p class="small mb-0"><a  href="product.html?dc=paddy" style="text-decoration: none;">Click here for More &nbsp;&nbsp;<i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></a></p>
-                        <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End -->
-          
-                <!-- Gallery item -->
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                  <div class="bg-white rounded shadow-sm"><img src="images/sugarcane/SG3.jpeg" alt="" class="img-fluid card-img-top">
-                    <div class="p-4">
-                      <h5> <a href="product.html?dc=sugarcane" class="text-dark" style="text-decoration: none;">Sugarcane</a></h5>
-                      <p class="small text-muted mb-0">The tall perennial grass in the genus Saccharum, tribe Andropogoneae, that are used for sugar production</p>
-                      <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                        <p class="small mb-0"><a  href="product.html?dc=sugarcane" style="text-decoration: none;">Click here for More &nbsp;&nbsp;<i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></a></p>
-                        <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End -->
-          
-                <!-- Gallery item -->
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                  <div class="bg-white rounded shadow-sm "><img src="images/jute/image1.jpeg" alt="" class="img-fluid card-img-top">
-                    <div class="p-4">
-                      <h5> <a href="product.html?dc=Jute" class="text-dark" style="text-decoration: none;">Jute</a></h5>
-                      <p class="small text-muted mb-0">The primary source of the fiber is Corchorus olitorius, but it is considered inferior to Corchorus capsularis.</p>
-                      <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                        <p class="small mb-0"><a  href="product.html?dc=Jute" style="text-decoration: none;">Click here for More &nbsp;&nbsp;<i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></a></p>
-                        <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End -->
-          
-                 <!-- Gallery item -vegetables --->
-                 <!--
-                 <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                  <div class="bg-white rounded shadow-sm"><img src="images/fruits-vegetables/tomato.jpeg" alt="" class="img-fluid card-img-top">
-                    <div class="p-4">
-                      <h5> <a href="product.html?dc=Veg-Fruit" class="text-dark" style="text-decoration: none;">Vegetables</a></h5>
-                      <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                      <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                        <p class="small mb-0"><a  href="product.html?dc=Veg-Fruit" style="text-decoration: none;">Click here for More &nbsp;&nbsp;<i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></a></p>
-                        <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                --->
-                <!-- End -->
-            </div>
-            <!---gallery-->
-          
-          </section>
-         
-
-          <!--Section: Contact-->
-          <section id="contact" class="text-center sqs-block-content">
-              <!-- Contacr Banner  -->
-              <div class="row py-5">
-                <div class="col-lg-12 mx-auto">
-                  <div class="text-dark p-5 shadow-sm rounded banner" >
-                    <h1 class="display-4">Contact us</h1>
-                  </div>
-                </div>
-              </div>
-             
-
-              <!--Grid row-->
-              <div class="row justify-content-center">
-
-                  <!--Grid column-->
-                  <div class="col-12 col-md-8 col-lg-6 pb-5">
-                      <!-- Form contact -->
-                      <form action="#" method="post">
-                        <div class="card border-info rounded-0">
-                            <div class="card-header p-0">
-                                <div class=" text-dark text-center py-2">
-                                    <h3><i class="fa fa-envelope"></i> Contact Form</h3>
-                                    <p class="m-0">Share Your Thoughts.</p>
-                                </div>
-                            </div>
-                            <div class="card-body p-3">
-
-                                <!--Body-->
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                                        </div>
-                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Name" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                                        </div>
-                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="example@gmail.com" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                  <div class="input-group mb-2">
-                                      <div class="input-group-prepend">
-                                          <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                                      </div>
-                                      <input type="email" class="form-control" id="nombre" name="subject" placeholder="Subject" required>
-                                  </div>
-                              </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
-                                        </div>
-                                        <textarea class="form-control" placeholder="Enter Your Message" required></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="text-center">
-                                    <input type="submit" value="SEND" class="btn btn-info btn-block rounded-0 py-2">
-                                </div>
-                            </div>
-
-                        </div>
-                    </form>
-                    <!--Form with header-->
-                  </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-lg-4 col-md-12">
-
-                  
-                        
-                            <b>Customer service:</b> <br />
-                            Phone: +1 129 209 291<br />
-                            E-mail: <a href="mailto:support@mysite.com">support@mysite.com</a><br />
-                            <br /><br />
-                            <b>Headquarter:</b><br />
-                            Palakkad, <br />
-                            Kerala<br />
-                            India<br />
-                            Phone: +1 145 000 101<br />
-                            <a href="mailto:usa@mysite.com">usa@mysite.com</a><br />
-                        
-                      </div>
-
-              </div>
-           </section>
-          <!--Section: Contact-->
-
-      </div>
-  </main>
-  <!--Main layout-->
-<!--Footer-->
-<!-- Footer -->
-<footer style="background-color: floralwhite;">
-  <div class="container py-5">
-    <div class="row py-4">
-      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
-        <p class="font-italic text-muted">Founded in 2020, Prajna Soft Creations is an Indian technology  
-                      
-          company providing AI solutions to industries including Agriculture.</p>
-        <ul class="list-inline mt-4">
-          <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
-          <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
-          <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
-          <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
-        </ul>
-      </div>
-      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-        <h6 class="text-uppercase font-weight-bold mb-4">PRODUCTS</h6>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-2"><a href="#" class="text-muted">Swati</a></li>
-          <li class="mb-2"><a href="#" class="text-muted">Vysh</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-        <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
-          <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
-          <li class="mb-2"><a href="#" class="text-muted">Contact Us</a></li>
-          <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-lg-0">
-        <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-        <p class="text-muted mb-4">We always sends valuable information as Newsletter. Provide Your Email ID.</p>
-        <div class="p-1 rounded border">
-          <div class="input-group">
-            <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
-            <div class="input-group-append">
-              <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Copyrights -->
-  <div class=" py-4" style="background-color: rgb(207, 203, 194);">
-    <div class="container text-center">
-      <p class="text-muted mb-0 py-2">© 2021  All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-<!-- End -->
-
-<!---Footer-->
  
-  </body>
+</head>
 
+<body>
 
-  <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-  <script src="js/jquery/jquery.easing.min.js"></script>  
- <script src="owlcarousel/dist/assets/owl.carousel.min.js"></script>
-  <script src="js/jquery/jquery.waypoints.min.js"></script>
-  <script src="js/counterup/jquery.counterup.min.js"></script>
-<link href="css/google-fonts.css" rel="stylesheet">
-  <script src="js/bootstrap/popper.min.js.map"></script>
-  <script src="js/venobox/venobox.min.js"></script>
-   <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-   <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Aranya&nbsp;</span><img src="images/ARANYA-logo.jpeg" alt="" class="img-fluid">&nbsp;&nbsp;</a></h1>
+        <!--  image logo -->
+        
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          
+          <li><a href="#services">Services</a></li>
+          <!----
+          <li><a href="#portfolio">Portfolio</a></li>
+          -->
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faq">Process</a></li>
+         
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Welcome to Aranya</h1>
+      <h2>To Innovate Healthier Generation</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Our Product</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="images/bg-3.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h1>Scientific Resource Planning through Artificial Intelligence and Remote Sensing.</h1>
+            <p class="font-italic">
+              Our objective is to protect mankind with organic and healthy food and increase the profit of farmers. 
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Optimizes the Usage of Pesticides and other Chemicals.</li>
+              <li><i class="icofont-check-circled"></i> Protect Farmer's lives and increases the Profit.</li>
+              <li><i class="icofont-check-circled"></i> Awareness about the Usage of Chemicals and Pesticides.</li>
+            </ul>
+            <p>
+              We are look into Global Health and Long life. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Modus Operandi</h2>
+          <div class="row">
+            <div class="col-lg-12 col-md-6 icon-box">
+          <p>In a comprehensive study published on Monday, December 8,2020 , scientists estimated that about 385 million people, 
+            particularly among farmers and agriculture workers, are poisoned by pesticides every year including 11,000 deaths per year. 
+            Among the fatalities, nearly 60% or 6,600 deaths per year occur in India.
+            This means 44% of the worldwide farming population (total 860 million) are poisoned by pesticides every year.
+            
+            “Beyond the immediate deaths, most people suffer long term chronic illnesses including neurological disorders. 
+            In India, during our surveys,
+             we find that many farmers are not even aware of their chronic conditions caused by the pesticides.
+            </p>
+          </div>
+        </div> 
+            <h3>What we provide ?</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-computer"></i></div>
+            <h4 class="title"><a href="">Crop Planning</a></h4>
+            <p class="description">Scientific Resource Planning determines which all plants could be best suitable for the land</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
+            <h4 class="title"><a href="">Statistical Analysis and monitoring the norms of Pesticides</a></h4>
+            <p class="description">Timely report of Plant conditions.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-earth"></i></div>
+            <h4 class="title"><a href="">Remote Sensing </a></h4>
+            <p class="description">Using Cloud technology we can determine the level of toxic elements.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-image"></i></div>
+            <h4 class="title"><a href="">Monitoring Health of the Plant.</a></h4>
+            <p class="description"> Farmer can check the health of plant at any time through the app or website.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-settings"></i></div>
+            <h4 class="title"><a href="">Dyanamic monitoring and Detection of Pesticides</a></h4>
+            <p class="description">Monitoring of pesticides sprayed on the leaves, fruit, leaf or soil using sensors.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-tasks-alt"></i></div>
+            <h4 class="title"><a href="">Decentralized markets</a></h4>
+            <p class="description">Ensures Sell from home through eCommerce portal and High profit for the farmer</p>
+          </div>
+        </div>
+
+      </div>
+    </section> 
+    <!-- End Services Section -->
+      
+   
+
+    <!-- ======= Why we are doing this Project ?  Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>How We Do This </h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <a data-toggle="collapse" class="" href="#faq1">How we are protecting the ecosystem  ? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-parent=".faq-list">
+              <p>
+                We are trying to keep a balanced ecosystem not by killing the pests. 
+                In case if the pesticide are  compulsorily required,  then we will try to make usage of permissible amount pesticides.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">See the how it Benefits to Farmers. <i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-parent=".faq-list">
+              <p>
+                As per the article titled “The global distribution of acute unintentional pesticide poisoning: estimations based on a systematic review”
+                 in BMC Public Health, revealed that about 44% of the worldwide farming population (total 860 million) are poisoned by pesticides every year. 
+                 Regular and periodic monitoring of the crop life cycle prevents the use of pesticides beyond the permissible levels. Providing an alternative to killing of pests could be a direct solution to the problem.
+
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">See how it benefits the whole human Population. <i class="icofont-simple-up"></i></a>
+            <div id="faq3" class="collapse" data-parent=".faq-list">
+              <p>
+                By periodical monitoring there is no excessive use of inorganic compounds that are toxic to human and harmful to the ecosystem
+
+                Thus by we are creating healthier generation by removing Pesticides.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">See how Farmers are getting more Profit. <i class="icofont-simple-up"></i></a>
+            <div id="faq4" class="collapse" data-parent=".faq-list">
+              <p>
+                The combination of artificial intelligence and remote sensing technologies to monitor the life cycle 
+                of a crop and prevent the attack of pests. The system also creates a feasible environment for the healthy
+                 growth of the plant to increase productivity. Also we are providing an eComerce portal for products to sell from home
+                 there by avoiding the storage for a longer period.
+
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Good Food requires smart farming techniques.<i class="icofont-simple-up"></i></a>
+            <div id="faq5" class="collapse" data-parent=".faq-list">
+              <p>
+                Grow with technologies. Be a Smart Farmer
+              </p>
+            </div>
+          </li>
+
+          
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team1.jpg" alt="">
+              <h4>Dr. Abhijith Menon</h4>
+              <span>Chief Executive Officer</span>
+              <p>
+                
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team-2.jpg" alt="">
+              <h4>Jessinshah P A</h4>
+              <span>Product Manager</span>
+              <p>
+                Team Member
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team-3.jpg" alt="">
+              <h4>Sabira Karim</h4>
+              <span>CTO</span>
+              <p>
+                Team Member
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Feel free to contact if you have any queries. </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Aranya</h3>
+              <p>Founded in 2021 aimed to provide healthy life using technology.</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info">
+              <div>
+                <i class="icofont-google-map"></i>
+                <p>Head Quarters <br>Palakkad, INDIA</p>
+              </div>
+
+              <div>
+                <i class="icofont-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+
+              <div>
+                <i class="icofont-phone"></i>
+                <p>+1 1234567890</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Aranya</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
   <!-- Template Main JS File -->
-  <script src="js/prajna.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 
